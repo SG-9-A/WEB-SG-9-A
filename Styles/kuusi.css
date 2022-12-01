@@ -1,35 +1,62 @@
-#core{
-    
+#information{
+    margin: 1%;
 }
 
-#information{
-    padding-left: 5%;
+#article{
+    margin: 1%;
+    position: absolute;
+    text-align: justify;
+    font-size: 150%;
+}
+
+#test{
+    margin: 1%;
+    padding-top: 10%;
+    position: absolute;
+    font-size: 175%;
+    font-weight: 500;
+}
+
+#core{
+float: right;
+border-style:solid;
+margin-right: 10%;
+padding: 3%;
+
+}
+
+
+
+#box1{
+    font-size: 50px;
 }
 
 #task{
-    padding-left: 5%;
+    
 }
 
-#v1{
-    padding-left: 5%;
+
+#result{
+    font-size: 170%;
 }
 
-#operator{
-    padding-left: 5%;
+#restartButton{
+    padding-left: 29%;
+
 }
 
-#v2{
-    padding-left: 5%;
+#restart{
+    font-size: 120%;
 }
 
-.buttons{
-    padding-left: 5%;
+#winner{
+    margin-left: 6%;
+    margin-top: 1%;
+    position:absolute;
 }
 
-.middleBox{
-    padding-left: 5%;
-}
-
-.sentBox{
-    padding-left: 5%;
+#loser{
+    margin-left: 4%;
+    margin-top: 1%;
+    position:absolute; 
 }
