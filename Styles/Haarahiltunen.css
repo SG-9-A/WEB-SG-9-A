@@ -1,0 +1,140 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Quicksand';font-size: 22px;
+    background-color: #32CD32
+    
+}
+
+#winner{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(67, 231, 13);
+    border-radius: 0.5cm;
+   
+    
+    
+    
+}
+#draw{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.header{width: 100%;
+    background-image: linear-gradient(to right,black, green);
+    }
+
+
+#welcome{
+    font-size: 150%;
+    font-weight: 1000;
+}
+
+#headerText{
+ font-size: 0.6cm; 
+ font-weight: 1000;
+ padding-bottom: 1%;
+  
+}
+
+#headerTextTwo{
+ font-size: 1cm; 
+   
+}
+#headerTextThree{
+ font-size: 1cm; 
+;  
+}
+
+
+.intro {
+   
+text-align: center; color: rgb(9, 16, 7);
+font-size: xx-large
+
+}
+
+
+#greetingInput{
+
+    text-align: center; color: rgb(5, 8, 4);
+    font-size: large;
+    
+    
+    
+}
+
+
+#quiz{
+    text-align: center; color:rgb(15, 5, 5);
+    font-size: x-large ;
+    
+}
+
+
+
+#answerA{
+  border: 0;
+  
+}
+#answerB{
+    border: 0;
+    
+}
+#answerC{
+    border: 0ch;
+    
+}
+#answerD{
+    border: 0cm;
+    
+}
+
+#namebutton{
+    background-color: black; 
+    color: white; 
+    border-radius: 5px;
+   
+}
+
+#nappula1{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula2{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula3{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula4{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula5{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
