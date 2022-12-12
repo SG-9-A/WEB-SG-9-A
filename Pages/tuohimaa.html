@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Tietovisa" content="Tietovisailua yleisesti">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="Tekijä" content="Joona Tuohimaa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joona - visailua</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -10,47 +12,60 @@
 </head>
 <body>
     <!-- Ylä tunniste ja navigaatiopalkki-->
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-xs-4 border-bottom">
-        <!--TEE YLÄTUNNISTE -->
-        <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-10">SG9</span>
-        </a> -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-xs-4">
+        <!--Navigointipalkki -->
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Etusivu</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Matikkavisa</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Tietovisa</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Tietovisa</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Tietoja</a></li>
+          <li class="nav-item"><a href="#Etusivu" class="nav-link" aria-current="page">Etusivu</a></li>
+          <li class="nav-item"><a href="#Matikkavisa" class="nav-link" >Matikkavisa</a></li>
+          <li class="nav-item"><a href="#Tietovisa" class="nav-link">Tietovisa</a></li>
+          <li class="nav-item"><a href="#Tietovisa" class="nav-link">Tietovisa</a></li>
+          <li class="nav-item"><a href="#Tietoja" class="nav-link">Tietoja</a></li>
         </ul>
     </header>
-    
-    <!-- Kontenttia (raakile)-->
+    <!-- Teeman värien vaihto divit-->
     <div class="row">
-        <div class="col-sm-3 m-3 p-3"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" class="img-fluid" alt="Luonto responsiivinen">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam exercitationem, fugit, praesentium maiores sint, recusandae dolore ad at quisquam optio necessitatibus adipisci odit blanditiis ab ex repellat similique dolores aliquid cupiditate soluta. Consequatur, vitae voluptates. Natus sunt amet similique fuga!</p></div>
-        <div class="col-sm-3 m-3 p-3"><img src="https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" alt="Luontokaksi responsiivinen">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, iste beatae, dolore incidunt nisi eos maxime id impedit explicabo cumque veritatis voluptatum ex eaque? Quae nobis obcaecati aliquid tenetur, explicabo, architecto, id quidem vitae est itaque eligendi repellendus. Non molestias quibusdam veniam culpa in, dolor repellat perferendis labore magni doloribus ut repellendus. Magnam fuga, eius distinctio laudantium molestias aspernatur quam.</p></div>
-        <div class="col-sm-3 m-3 p-3" ><img src="https://images.unsplash.com/photo-1528184039930-bd03972bd974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" alt="Luontokolme responsiivinen">
-          <p>ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati perspiciatis autem, vel delectus dolor eveniet nam? Vero consequatur aut porro, commodi delectus nisi vitae, libero quam quo iste sed!
-        Beatae voluptate rerum ipsam tenetur, odio voluptas. Quos repellendus aliquid qui inventore facilis laborum ducimus ullam non nemo quis tempora, blanditiis, eius recusandae distinctio dolorem ad, animi cumque dolor placeat?
-        Inventore quia quidem, maiores dolorum quaerat voluptates illo! Aliquid at a architecto, doloremque sed est dolorem rem cum nobis neque totam nisi tempora, minima reiciendis libero ut harum repellendus laudantium.</p></div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide col-sm-2 m-3 p-3" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="First slide">
+      <div class="col-6" id="Teemapinkki" onclick="setTheme('theme-btnpinkki')"><p class="text-center"><button class="theme-btnpinkki" onclick="setTheme('theme-btnpinkki')" title="pink mode">Pinkki teema</button></div>
+      <div class="col-6" id="Teemasininen" onclick="setTheme('theme-btnsininen')"><p class="text-center"><button class="theme-btnsininen" onclick="setTheme('theme-btnsininen')" title="blue mode">Sininen teema</button></div>
+    </div>
+    <!-- Tietovisailun Otsikko-->
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 mt-2 justify-content-center text-center py-5">
+          <h1 class="text-center">Tervetuloa testaamaan omat tietotaitosi tässä kinkkisessä visassa.</h1></div>
+        <div class="col-2"></div>
+    <!-- Tietovisan rakenne-->
+    <div class="row justify-content-center" id="Visa">
+      <div class="quiz-container col-auto" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Question Text</h2>
+          <ul>
+            <div class="">
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Answer</label>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt="Second slide">
+            <div>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Answer</label>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1510797215324-95aa89f43c33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="Third slide">
+            <div>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer</label>
             </div>
-          </div>
+            <div>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer</label>
+            </div>
+            <div>
+            <button id="submit">Vastaa</button>
+            </div>
+          </ul>
         </div>
-
+        <div id="incorrect"></div>
+        <div class="col-6 col-auto" id="question-tracker">Kysymys 1/5</div>
+        <div class="col-6 col-auto" id="kuvat"><img/></div>
       </div>
-    <!-- Alapalkki ja tunnistetta-->
+
+    <!-- Alapalkki ja alatunniste-->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
             <div class="col-md-4 d-flex align-items-center">
@@ -62,55 +77,7 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </body>
-    
+    <script src="/JavaScript/tuohimaa.js"></script>  
 </body>
 </html>
 
-<!-- Kysymykset tehtävään
-
-  Joonan tietovisa 2022 - TIK22SP
-
-Kysymyksiä 1.lk - 6.lk oppilaille.
-
-1. Kysymys
-Missä maassa Venetsia sijaitsee?
-
-- Suomessa
-- Sveitsissä
-- Italiassa !!!
-- Luxemburgissa
-
-2. Kysymys
-Montako jalkaa hämähäkillä on?
-
-- Kuusi
-- Kahdeksan !!!
-- Kymmenen
-- Neljä
-
-3. Kysymys
-
-Mikä on kili?
-
-- Hevonen
-- Pässi !!!
-- Aasi
-- Koira
-
-4. Kysymys
-Mikä valuutta oli Suomessa ennen euroja?
-
-- Rupla
-- Kruuna 
-- Euro
-- Markka !!!
-
-5. Kysymys
-Mikä on aurinkokuntamme suurin planeetta?
-
-- Venus
-- Maa
-- Jupiter !!!
-- Saturnus
--->
