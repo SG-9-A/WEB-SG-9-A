@@ -1,7 +1,86 @@
+/* Joona Tuohimaa - TIK22SP */
+
+/** Sivuston teeman värityksen ja taustanvaihto. / Linkit käytettäviin taustakuviin 
+Pinkki taustakuva: https://pixabay.com/fi/photos/unikot-kukat-alalla-unikot-6476322/
+Sininen taustakuva: https://pixabay.com/fi/photos/kuumailmapallo-j%C3%A4rvi-ilmapallo-2411851/
+*/
+
+.theme-btnpinkki{
+    color: rgb(181, 91, 106);
+    border-radius: 20px;
+    border-color: rgb(111, 23, 60);
+}
+
+.theme-btnsininen{
+    color: rgb(0, 0, 255);
+    border-radius: 20px;
+    border-color: rgb(0, 0, 255);
+}
+:root,
+:root.theme-btnpinkki{
+    --bg-color:rgb(181, 91, 106);
+    --text-color:rgb(111, 23, 60);
+    --bg-picture:url(/Images/Pink-bg.jpg);
+    --a-color:rgb(111, 23, 60);
+}
+:root.theme-btnsininen{
+    --bg-color: rgb(3, 3, 113);
+    --text-color:rgb(0, 0, 255);
+    --bg-picture:url(/Images/Blue-bg.jpg);
+    --a-color:rgb(0, 0, 255);
+}
+#Teemapinkki:hover{
+    background-color:rgb(181, 91, 106);
+    opacity: 60%;
+    border: 20px;
+    border-radius: 20px;
+}
+#Teemasininen:hover{
+    background-color:rgb(0, 0, 255);
+    opacity: 60%;
+    border: 20px;
+    border-radius: 20px;
+}
+li:hover{
+    background-color: var(--text-color);
+    border: 10px;
+    border-radius: 10px;
+    opacity: 60%;
+}
+/** Taustan säädöt */
 body{
-    background-color: rgb(37, 100, 37);
+    background-color: var(--bg-color);
+    background-image: var(--bg-picture);
+    color: var(--text-color);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Quicksand';
+    font-size: 22px;
+}
+/** Hoverien säätäminen teeman vaihdoille ja tekstin jäsentämistä*/ 
+.nav-link{
+    color: var(--a-color);
+}
+.nav-link:hover{
+    color: var(--a-color);
+    background-color: var(--bg-color);
 }
 p{
-    padding-top: 5px;
+    padding-top: 15px;
     text-align: justify;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/** Tietovisan muotoilut*/
+#Visa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
