@@ -60,7 +60,7 @@ body{
     font-family: 'Quicksand';
     font-size: 22px;
 }
-/** Hoverien säätäminen teeman vaihdoille ja tekstin jäsentämistä*/ 
+/** Hoverien säätäminen teeman vaihdoille ja tekstin jäsentämistä */ 
 .nav-link{
     color: var(--a-color);
 }
@@ -72,15 +72,18 @@ p{
     padding-top: 15px;
     text-align: justify;
 }
-
-ul{
-    list-style-type: none;
+div .answer{
+    list-style-type: square;
 }
 
-/** Tietovisan muotoilut*/
+/** Tietovisan muotoilut */
 #Visa{
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+button{
+    opacity: 50%;
+    background: none;
 }
