@@ -47,6 +47,10 @@ body {
     color: #FFFF;
 }
 
+#option5{
+    color: #FFFF;
+}
+
 a:link {
     text-decoration:none;
 }
@@ -64,6 +68,10 @@ a:link {
 }
 
 #option4:hover{
+    color: #000;
+}
+
+#option5:hover{
     color: #000;
 }
 
