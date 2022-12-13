@@ -1,6 +1,6 @@
+//Tietovisan koodi, koostuu useammasta funktiosta joilla kysymykset vaihtuvat
 
 //Varrit
-
 let welcome = document.querySelector("#welcome");
 let userName = document.querySelector("#userName");
 let headerText = document.querySelector("#headerText");
@@ -35,7 +35,7 @@ let questionList = [
 
 ]
 
-//Kysymyslistat array muodossa.
+//Kysymyslistat array:nä.
 let aAnswerlist = ["Viro", "Merkurius", "Oulu", "Karitsa","Puolukka",]
 let bAnswerlist = ["Venäjä", "Venus", "Rovaniemi", "Vasikka","Mustikka",]
 let cAnswerlist = ["Islanti", "Mars", "Porvoo", "Varsa","Sudenmarja",]
@@ -51,10 +51,10 @@ qn5Button.style.display = "none";
 
 //Funktio resetoi valitun vastauksen näyttämisen aikaisemmassa kysymyksessä.
 function reset () {
-    answerA.style.color = "black";
-    answerB.style.color = "black";
-    answerC.style.color = "black";
-    answerD.style.color = "black";  
+    answerA.style.color = "";
+    answerB.style.color = "";
+    answerC.style.color = "";
+    answerD.style.color = "";  
 
     question.innerHTML = questionList[iterationNumber];
     answerA.innerHTML = aAnswerlist[iterationNumber];
@@ -78,9 +78,9 @@ function greeting() {
     answerD.innerHTML = dAnswerlist[iterationNumber];
 
 }
-//Funktio määrittää vastauksen valitsemisen ja sen näyttämisen.
+//Funktio määrittää vastauksen valitsemisen ja sen näyttämisen käyttäjälle.
 function aFunction() {
-    answerA.style.color = "black";
+    answerA.style.color = "red";
     answerB.style.color = "grey";
     answerC.style.color = "grey";
     answerD.style.color = "grey";
@@ -88,7 +88,7 @@ function aFunction() {
 }
 function bFunction() {
     answerA.style.color = "grey";
-    answerB.style.color = "black";
+    answerB.style.color = "red";
     answerC.style.color = "grey";
     answerD.style.color = "grey";
     qnChoice = "b";
@@ -96,15 +96,15 @@ function bFunction() {
 function cFunction() {
     answerA.style.color = "grey";
     answerB.style.color = "grey";
-    answerC.style.color = "black";
-    answerD.style.color = "grey";
+    answerC.style.color = "red";
+    answerD.style.color = "grey"; 
     qnChoice = "c";
 }
 function dFunction() {
     answerA.style.color = "grey";
     answerB.style.color = "grey";
     answerC.style.color = "grey";
-    answerD.style.color = "black";
+    answerD.style.color = "red";
     qnChoice = "d";
 }
 
@@ -198,7 +198,7 @@ if (qnChoice == "c") {
     headerText.innerHTML = "Sait " + score + " vastausta oikein!";
     welcome.innerHTML = "Kiitos!";
     quiz.style.display = "none";
-
+    //Lopputuloksen päätös vastausten perusteella
     if (score == "5"){
         document.getElementById("winner").style.visibility = "";
         }
