@@ -53,8 +53,13 @@ body {
    
 }
 #headerTextThree{
- font-size: 0.8cm;
+ font-size: 0.9cm;
  color: rgb(59, 212, 28);
+font-weight: 600;  
+}
+#headerTextFour{
+ font-size: 0.8cm;
+ color: rgb(235, 13, 13);
 font-weight: 600;  
 }
 
@@ -138,6 +143,7 @@ font-size: xx-large
     color: white;
     border-radius: 5px;
 }
+
 
 /* Taustavideon asettelu  */
 .back-video{
