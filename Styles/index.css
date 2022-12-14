@@ -1,9 +1,7 @@
-/* Taustakuvan linkki: https://pixabay.com/fi/photos/fantasia-luola-mystinen-rock-kivi-2750995/ */
-
 body {
     font-family: 'Quicksand';
     font-size: 22px;
-    background: url("../Images/index.jpg");
+    background: url("../Images/VuoriTausta.mp4");
     background-position: center;
     position: static;
     background-repeat: no-repeat;
@@ -11,8 +9,6 @@ body {
     background-attachment: fixed;
     color: #FFFF;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    
-    
 }
 
 #head{
@@ -21,8 +17,6 @@ body {
     font-weight: 700;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     color: #DC143C;
-    
-    
 }
 
 .content{
@@ -77,3 +71,24 @@ a:link {
     color: #000;
 }
 
+/** Taustan säädöt */
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+    
+    /* Taustavideon asettelu eri aspecteihin  */
+    @media (min-aspect-ratio:3/1){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+    }
+    @media (max-aspect-ratio:16/10){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+    }
