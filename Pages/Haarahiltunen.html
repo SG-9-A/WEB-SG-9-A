@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haarahiltunen Projekti</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/Haarahiltunen.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </head>
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#linkit" class="nav-link text-bg-danger">Etusivu</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-danger">Matikkavisa</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-danger">Tietovisa</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-danger">Tietovisa</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-danger">Tietoja</a></li>
-        </ul>
-      </header>
+     <!-- Bootstrap header -->
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="../index.html" class="nav-link text-danger">Etusivu</a></li>
+      <li class="nav-item"><a href="kainulainen.html" class="nav-link text-danger">Matikkavisa</a></li>
+      <li class="nav-item"><a href="tuohimaa.html" class="nav-link text-danger">Tietovisa</a></li>
+      <li class="nav-item"><a href="koskela.html" class="nav-link text-danger">Alkuainevisa</a></li>
+      <li class="nav-item"><a href="Haarahiltunen.html" class="nav-link text-danger">Yleistietovisa</a></li>
+
+      <li class="nav-item"><a href="info.html" class="nav-link text-danger">About</a></li>
+    </ul>
+  </header>
     </div>
 
 
@@ -36,16 +39,23 @@
 
 
 
-
-    <div class="intro">
+    <!-- Sivun saateteksti -->
+    
+    <div id="intro">
         <h1 id="welcome">Tervetuloa kyselyyni!</h1>
         <h2 id="headerText">Mikä sinun nimesi on?</h2> 
         <h3 id="headerTextTwo"></h3>
         <h4 id="headerTextThree"></h4>
+         <!-- Kuvat -->
         <img src="/photo/voitto.jpg" id="winner">
         <img src="/photo/pystyt.png" id="draw">
-        
 
+           <!-- Taustavideo ja sen loopille laitto -->
+        <div class="stars">
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="/photo/stars.mp4" type="video/mp4">
+        </video>
+        </div>
 
 
     </div>
@@ -54,10 +64,10 @@
         <input id="userName"> <br><br>
         <button id="namebutton" onclick="greeting()">vastaa</button>
     </div>
-
+   <!-- Visan toimintaan liittyvät napit ja funktiot -->
 <div id="quiz">
     <h3 id="question"></h3>
-    <div id="answerA" onclick="aFunction()"></div>
+    <div  id="answerA" onclick="aFunction()"></div>
     <div id="answerB" onclick="bFunction()"></div>
     <div id="answerC" onclick="cFunction()"></div>
     <div id="answerD" onclick="dFunction()"></div> <br>
@@ -90,7 +100,7 @@
 
 
 
-
+ <!-- Bootstrap footer -->
 </div>
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
@@ -106,6 +116,6 @@
   </div>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="/java.js"></script>
+<script src="/Haarahiltunen.js"></script>
 </body>
 </html>
