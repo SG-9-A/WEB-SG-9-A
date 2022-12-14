@@ -20,13 +20,13 @@ Sininen taustakuva: https://pixabay.com/fi/photos/kuumailmapallo-j%C3%A4rvi-ilma
 :root.theme-btnpinkki{
     --bg-color:rgb(181, 91, 106);
     --text-color:rgb(111, 23, 60);
-    --bg-picture:url(/Images/Pink-bg.jpg);
+    --bg-picture:url(../Images/Pink-bg.jpg);
     --a-color:rgb(111, 23, 60);
 }
 :root.theme-btnsininen{
     --bg-color: rgb(3, 3, 113);
     --text-color:rgb(0, 0, 255);
-    --bg-picture:url(/Images/Blue-bg.jpg);
+    --bg-picture:url(../Images/Blue-bg.jpg);
     --a-color:rgb(0, 0, 255);
 }
 #Teemapinkki:hover{
