@@ -6,6 +6,7 @@ let userName = document.querySelector("#userName");
 let headerText = document.querySelector("#headerText");
 let headerTextTwo = document.querySelector("#headerTextTwo");
 let headerTextThree = document.querySelector("#headerTextThree");
+let headerTextFour = document.querySelector("#headerTextFour");
 let greetingInput = document.querySelector("#greetingInput");
 let quiz = document.querySelector("#quiz");
 let qn1Button = document.querySelector("#qn1Button");
@@ -189,10 +190,13 @@ function submitQn5() {
 if (qnChoice == "c") {
     headerTextTwo.innerHTML = "Vastauksesi on oikein!"
     headerTextThree.innerHTML = "Myrkytystapaukset ovat kuitenkin olleet harvinaisia,sillä marjoja on vain yksi kasvia kohti ja sen maku on vastenmielinen. "; 
+    headerTextFour.innerHTML = "Klikkaa kuvaa aloittaaksesi alusta!";
     score += 1;
 } else if (qnChoice == "a","b","c"){
     headerTextTwo.innerHTML = "Vastauksesi on väärin!"
-    headerTextThree.innerHTML = "Sudenmarja on myrkyllinen!";  
+    headerTextThree.innerHTML = "Sudenmarja on myrkyllinen!";
+    headerTextFour.innerHTML = "Klikkaa kuvaa aloittaaksesi alusta!";
+
 }
     iterationNumber += 1;
     headerText.innerHTML = "Sait " + score + " vastausta oikein!";
