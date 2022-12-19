@@ -1,0 +1,63 @@
+
+/*Kuvan linkki: https://pixabay.com/fi/vectors/vuoret-panoraama-mets%c3%a4-vuori-1412683/ */
+
+/*Kuva sivun taustana*/
+
+body{
+    font-family: 'Quicksand';
+    font-size: 22px;
+    background-image: url(../Images/LUONTO.webp);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#otsikko{
+    text-align: center;
+    text-decoration-line: underline; 
+    text-shadow: 0 0 3px #ff0000; 
+}
+
+
+#quiz{
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 0 0 3px #ff0000; 
+}
+
+#intro{
+    text-align: center;
+    margin-top: 2%;
+    
+}
+
+#press{
+    text-align: center;
+    margin-top: 12%;
+    text-shadow: 0 0 3px #ff0000; 
+    
+}
+
+#outro{
+    text-align: center;
+    margin-top: 2%;
+    text-shadow: 0 0 3px #ff0000; 
+}
+
+#reload{
+   text-align: center;
+   margin-top: 2%;
+   
+}
+
+.nav-link{
+    color:rgb(255, 255, 255); 
+}
+
+.nav-link:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
