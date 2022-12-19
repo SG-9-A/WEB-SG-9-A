@@ -21,6 +21,10 @@ body {
     
     
 }
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
 /* Kuvan asettelu  */
 #draw{
     height: auto;
