@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haarahiltunen Projekti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/Haarahiltunen.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+<body>
+     <!-- Bootstrap header -->
+  <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar">
+      <ul class="navbar-nav d-md-flex d-block flex-row mx-md-auto mx-0">
+        <li class="nav-item"><a href="../index.html" class="nav-link text-danger">Etusivu</a></li>
+        <li class="nav-item"><a href="kainulainen.html" class="nav-link text-danger">Matikkavisa</a></li>
+        <li class="nav-item"><a href="tuohimaa.html" class="nav-link text-danger">Tietovisa</a></li>
+        <li class="nav-item"><a href="koskela.html" class="nav-link text-danger">Alkuainevisa</a></li>
+        <li class="nav-item"><a href="Haarahiltunen.html" class="nav-link text-danger">Yleistietovisa</a></li>
+
+      <li class="nav-item"><a href="info.html" class="nav-link text-danger">Tietoja</a></li>
+    </ul>
+  </nav>
+    </div>
+
+
+
+    <!-- Sivun saateteksti -->
+    <!-- S -->
+    <div id="intro">
+        <h1 id="welcome">Tervetuloa kyselyyni!</h1>
+        <h2 id="headerText">Mikä sinun nimesi on?</h2> 
+        <h3 id="headerTextTwo"></h3>
+        <h4 id="headerTextThree"></h4>
+        
+         <!-- Kuvat -->
+        <img src="../Images/photo/voitto.jpg" id="winner" onClick="window.location.reload();"> 
+        <img src="../Images/photo/häviö.png" id="draw" onClick="window.location.reload();">
+
+           <!-- Taustavideo ja sen loopille laitto -->
+        <div class="stars">
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="../Images/photo/stars.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <h5 id="headerTextFour"></h5>
+    </div>
+
+    <div id="greetingInput">
+        <input id="userName"> <br><br>
+        <button id="namebutton" onclick="greeting()">vastaa</button>
+    </div>
+   <!-- Visan toimintaan liittyvät napit ja funktiot -->
+<div id="quiz">
+    <h3 id="question"></h3>
+    <div  id="answerA" onclick="aFunction()"></div>
+    <div id="answerB" onclick="bFunction()"></div>
+    <div id="answerC" onclick="cFunction()"></div>
+    <div id="answerD" onclick="dFunction()"></div> <br>
+
+<div id="qn1Button" onclick="submitQn1()"><button id="nappula1">Vastaa</button></div>
+<div id="qn2Button" onclick="submitQn2()"><button id="nappula2" >Vastaa</button></div>
+<div id="qn3Button" onclick="submitQn3()"><button id="nappula3">Vastaa</button></div>
+<div id="qn4Button" onclick="submitQn4()"><button id="nappula4">Vastaa</button></div>
+<div id="qn5Button" onclick="submitQn5()"><button id="nappula5">Vastaa</button></div>
+
+
+
+ <!-- Bootstrap footer -->
+</div>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="30"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class= "mb-3 mb-md-0 text-danger">&copy; Study Group 9a, 2022 Haarahiltunen Saku</span>
+      </div>
+  
+  
+    </footer>
+  </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="../JavaScript/Haarahiltunen.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: 'Quicksand';
+    font-size: 22px;
+    background: url("../Images/VuoriTausta.mp4");
+    background-position: center;
+    position: static;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFFF;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#head{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 700;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: #DC143C;
+}
+
+.content{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 200%;
+    font-weight: 600;
+}
+
+#option1{
+    color: #FFFF;
+    
+}
+
+#option2{
+    color: #FFFF;
+}
+
+#option3{
+    color: #FFFF;
+}
+
+#option4{
+    color: #FFFF;
+}
+
+#option5{
+    color: #FFFF;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+#option1:hover{
+    color: #000;
+}
+
+#option2:hover{
+    color: #000;
+}
+
+#option3:hover{
+    color: #000;
+}
+
+#option4:hover{
+    color: #000;
+}
+
+#option5:hover{
+    color: #000;
+}
+
+/** Taustan säädöt */
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+    
+    /* Taustavideon asettelu eri aspecteihin  */
+    @media (min-aspect-ratio:3/1){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+    }
+    @media (max-aspect-ratio:16/10){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+    }

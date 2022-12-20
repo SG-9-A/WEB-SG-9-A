@@ -1,0 +1,177 @@
+/* Taustavideon linkki:https://pixabay.com/fi/videos/t%C3%A4hdet-pitk%C3%A4-altistuminen-6962/
+/* kuva linkit:https://pixabay.com/fi/illustrations/samuel-peukut-pystyyn-nauraa-viile%c3%a4-1233415/
+/* kuva linkit:https://pixabay.com/fi/illustrations/samuel-hymi%c3%b6-hymyilev%c3%a4-peukut-alas-3898008/
+
+/* Sivuston päätyyli ja cursorin muutos  */
+body {
+    font-family: 'Quicksand';font-size: 22px;
+    cursor: pointer;
+    
+}
+
+
+/* Kuvan asettelu  */
+#winner{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 0.5cm;
+   
+    
+    
+    
+}
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+/* Kuvan asettelu  */
+#draw{
+    height: auto;
+    width: 13%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Tekstin tyyliä  */
+#welcome{
+    font-size: 1cm;
+    font-weight: 1000;
+    color: rgb(59, 212, 28);
+}
+
+#headerText{
+ font-size: 0.8cm;
+ font-weight: 800; 
+ padding-bottom: 1%;
+ color: rgb(104, 216, 19);
+ font-weight: 600;
+}
+
+#headerTextTwo{
+ font-size: 1cm; 
+ color: rgb(59, 212, 28);
+ font-weight: 600;
+   
+}
+#headerTextThree{
+ font-size: 0.9cm;
+ color: rgb(59, 212, 28);
+font-weight: 600;  
+}
+#headerTextFour{
+ font-size: 0.8cm;
+ color: rgb(235, 13, 13);
+font-weight: 600;  
+}
+
+
+#intro {
+font-weight: 600;   
+text-align: center; 
+font-size: xx-large
+
+
+}
+
+/* Nimikentän väri ja asettelu */
+#greetingInput{
+
+    text-align: center; 
+    color: rgb(233, 239, 251);
+    font-size: large;
+    
+    
+    
+}
+
+/* Kysymysten tyyli ja asettelu  */
+#quiz{
+    font-weight: 800;
+    text-align: center; color: rgb(233, 239, 251);
+    font-size: x-large ;
+    
+}
+
+
+/* Vaihtoehtojen alkuperäinen väri */
+#answerA{
+    color: rgb(233, 239, 251);
+  
+}
+#answerB{
+    color: rgb(233, 239, 251);
+    
+}
+#answerC{
+    color: rgb(233, 239, 251);
+    
+}
+#answerD{
+    color: rgb(233, 239, 251);
+    
+}
+
+/* Submit nappuloiden tyyli ja väri */
+#namebutton{
+    background-color: black; 
+    color: white; 
+    border-radius: 5px;
+   
+}
+
+#nappula1{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula2{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula3{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula4{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#nappula5{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* Taustavideon asettelu  */
+.back-video{
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;    
+}
+
+/* Taustavideon asettelu eri aspecteihin  */
+@media (min-aspect-ratio:3/1){
+.back-video{
+    width: auto;
+    height: auto;
+}
+}
+@media (max-aspect-ratio:16/10){
+.back-video{
+    width: auto;
+    height: auto;
+}
+}

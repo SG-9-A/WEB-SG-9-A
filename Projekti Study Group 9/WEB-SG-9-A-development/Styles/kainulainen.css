@@ -1,0 +1,127 @@
+/* Sivuston päätyylit ja taustakuvan määritykset  */
+@media (-webkit-device-pixel-ratio: 1.25) {
+    * {
+      zoom: 0.91;
+    }
+  }
+
+/* Taustakuvan linkki: https://pixabay.com/fi/photos/auringonlasku-puu-vett%c3%a4-siluetti-1373171/ */
+
+
+body {
+    font-family: 'Quicksand';
+    font-size: 22px;
+    background: url("../Images/re8.jpg");
+    background-position: center;
+    position: static;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+
+#information{
+    margin: 1%;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#article{
+    margin: 1%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#test{
+    font-size: 175%;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    
+}
+
+.core{
+    text-align: center;       
+}
+
+
+#v1{
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#operator{
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#v2{
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+
+#box1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#task{
+    font-weight: 700;
+    text-decoration: underline;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+
+#result{
+    font-size: 150%;
+    text-decoration: underline;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#restartButton{
+    font-size: 75%;
+    
+}
+
+#restart{
+    font-size: 120%;
+}
+
+#winner{
+    height: 120px;
+    width: 150px; 
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+#message{
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#loser{
+    height: 120px;
+    width: 150px; 
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matikkatesti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/kainulainen.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Bootstrap header -->
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav d-md-flex d-block flex-row mx-md-auto mx-0">
+          <li class="nav-item"><a href="../index.html" class="nav-link text-danger">Etusivu</a></li>
+          <li class="nav-item"><a href="kainulainen.html" class="nav-link text-danger">Matikkavisa</a></li>
+          <li class="nav-item"><a href="tuohimaa.html" class="nav-link text-danger">Tietovisa</a></li>
+          <li class="nav-item"><a href="koskela.html" class="nav-link text-danger">Alkuainevisa</a></li>
+          <li class="nav-item"><a href="Haarahiltunen.html" class="nav-link text-danger">Yleistietovisa</a></li>
+          <li class="nav-item"><a href="info.html" class="nav-link text-danger">Tietoja</a></li>
+      </ul>
+    </nav>
+
+
+  <h1 id="information">
+    Matematiikkaa 
+  </h1>
+
+
+<!-- Sivun saateteksti, siinä kerrotaan yhteenlaskuista lyhyesti -->
+  <article id="article">Yhteenlasku on yksi aritmeettisista peruslaskutoimituksista ja se on ensimmäinen koululaisille opetettavista.<br> Yhteenlaskuoperaatio yhdistää ainakin kaksi lukua jotka ovat yhteenlaskettavat toiseksi luvuksi, summaksi.<br> Esimerkiksi 1 + 2 = 3 (luetaan yksi plus kaksi on kolme ), jossa luku 1 on yhteenlaskettava,<br> johon lisätään luku 2, eli yhteenlaskettava ja näin saadaan summa, eli luku 3.</article>
+  
+  <div id="test">Voit kokeilla alla yhteenlaskuja!</div>
+  <br></br>
+
+
+  <!-- Div class matikkapelin sisäisten osien liikutteluun (kuvat, numerot, tekstit) -->
+<div class="core">
+  
+    <h2 id="task">Matikkatesti</h2>
+
+      <p id="v1"></p>
+      <p id="operator">+</p>
+      <p type="text" id="v2"></p>
+      
+      <p id="result"></p>
+
+<!-- Voittajakuvan linkki: https://pixabay.com/fi/vectors/onnellinen-kasvot-hymi%c3%b6-vilkkuu-v-35164/ -->
+<!-- Häviäjäkuvan linkki: https://pixabay.com/fi/vectors/otsa-kurtussa-hymi%c3%b6-hymi%c3%b6t-tunne-150840/ -->
+
+      <img src="../Images/re6.png" id="winner">
+      <img src="../Images/re7.png" id="loser">
+
+
+<div class="middleBox">
+  <input type="text" id="answ">
+</div>
+
+<div id="sentBox"></div>
+
+<button onclick="jsGame()" id="submit">Tarkista</button>
+
+<div id="restartButton">
+  <button onClick="window.location.reload();" id="restart" >Aloita alusta</button>
+  <div id="message"></div> 
+  </div>
+
+  <!-- Bootstrap footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom ">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="30"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-danger">&copy; Study Group 9 - Samu Kainulainen, 2022</span>
+    </div>
+
+
+  </footer>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+    <script src="../JavaScript/kainulainen.js"></script>
+</html>

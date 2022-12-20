@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Tietovisa" content="Tietovisailua yleisesti">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="Tekijä" content="Joona Tuohimaa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietovisa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/tuohimaa.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+<body>
+  <!-- Pääsisältö sivulta tämän sisälle -->
+  <div class="d-flex flex-column min-vh-100">
+    <main class="flex-grow-1">
+    <!-- Ylä tunniste ja navigaatiopalkki-->
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar">
+        <!--Navigointipalkki -->
+        <ul class="navbar-nav d-md-flex d-block flex-row mx-md-auto mx-0">
+          <li class="nav-item"><a href="../index.html" class="nav-link" aria-current="page">Etusivu</a></li>
+          <li class="nav-item"><a href="kainulainen.html" class="nav-link" >Matikkavisa</a></li>
+          <li class="nav-item"><a href="tuohimaa.html" class="nav-link">Tietovisa</a></li>
+          <li class="nav-item"><a href="koskela.html" class="nav-link">Alkuainevisa</a></li>
+          <li class="nav-item"><a href="Haarahiltunen.html" class="nav-link">Yleistietovisa</a></li>
+          <li class="nav-item"><a href="info.html" class="nav-link">Tietoja</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Teeman värien vaihto divit-->
+    <div class="row">
+      <div class="col-6" id="Teemapinkki" onclick="setTheme('theme-btnpinkki')"><p class="text-center"><button class="theme-btnpinkki" onclick="setTheme('theme-btnpinkki')" title="pink mode">Pinkki teema</button></div>
+      <div class="col-6" id="Teemasininen" onclick="setTheme('theme-btnsininen')"><p class="text-center"><button class="theme-btnsininen" onclick="setTheme('theme-btnsininen')" title="blue mode">Sininen teema</button></div>
+    </div>
+    <!-- Tietovisailun Otsikko-->
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 mt-2 justify-content-center text-center py-2">
+          <h4 class="text-center">Tervetuloa testaamaan omat tietotaitosi tässä kinkkisessä visassa.</h4></div>
+        <div class="col-2"></div>
+    <!-- Tietovisan rakenne-->
+    <div class="row justify-content-center" id="Visa">
+      <div class="quiz-container col-auto" id="quiz">
+        <div class="quiz-header d-flex justify-content-center">
+          <h2 id="question">Question Text</h2></div>
+          <ul>
+            <div class="d-flex">
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text" class="ms-1">Answer</label>
+            </div>
+            <div class="d-flex">
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text" class="ms-1">Answer</label>
+            </div>
+            <div class="d-flex">
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer</label>
+            </div>
+            <div class="d-flex">
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer</label>
+            </div>
+            <div class="d-flex justify-content-center">
+               <button id="submit">Vastaa</button>
+            </div>
+          </ul>
+        </div>
+        <div id="incorrect" class="d-flex justify-content-center"></div>
+        <div class="d-flex justify-content-center" id="question-tracker">Kysymys 1/5</div>
+        <div class="d-flex justify-content-center" id="Kuvat"></div>
+      </div>
+    </main>
+  </div>
+    <!-- Alapalkki ja alatunniste-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom" id="footer">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="30"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; Study Group 9a, 2022 - Joona Tuohimaa</span>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../JavaScript/tuohimaa.js"></script>  
+</body>
+</html>
